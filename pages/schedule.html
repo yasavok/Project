@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание группы</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+    <nav class="nav-menu">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/images/logo.png" alt="Логотип колледжа" class="nav-logo-img">
+            </a>
+            <div class="nav-links">
+                <a href="schedule.html" class="nav-link active">Расписание</a>
+                <a href="news.html" class="nav-link">Новости</a>
+            </div>
+        </div>
+    </nav>
+    <div class="schedule-container">
+        <div class="schedule-header">
+            <h2>Расписание группы <span id="groupNumber" class="group-number"></span></h2>
+            <div class="week-info">
+                <div class="current-week">
+                    <span class="week-label">Текущая неделя:</span>
+                    <span class="week-number">Нечетная</span>
+                </div>
+                <div class="week-date">
+                    <span class="date-label">Период:</span>
+                    <span class="date-range">none</span>
+                </div>
+            </div>
+        </div>
+        <div class="schedule-wrapper">
+            <div class="schedule">
+                <div class="schedule-table">
+                    <div class="lesson" onclick="showTeacher(1)">
+                        <div class="lesson-time">
+                            <span class="time">8:00 - 9:35</span>
+                            <span class="lesson-number">1 пара</span>
+                        </div>
+                        <div class="lesson-info">
+                            <span class="subject">Математика</span>
+                            <span class="teacher">Стрижов О.В.</span>
+                        </div>
+                        <div class="lesson-location">
+                            <span class="room">Ауд. 01</span>
+                            <span class="building">Корпус 1</span>
+                        </div>
+                    </div>
+                    <div class="lesson" onclick="showTeacher(2)">
+                        <div class="lesson-time">
+                            <span class="time">9:45 - 11:20</span>
+                            <span class="lesson-number">2 пара</span>
+                        </div>
+                        <div class="lesson-info">
+                            <span class="subject">Физика</span>
+                            <span class="teacher">Ивахненко Д.В.</span>
+                        </div>
+                        <div class="lesson-location">
+                            <span class="room">Ауд. 21</span>
+                            <span class="building">Корпус 1</span>
+                        </div>
+                    </div>
+                    <div class="lesson" onclick="showTeacher(3)">
+                        <div class="lesson-time">
+                            <span class="time">12:00 - 13:35</span>
+                            <span class="lesson-number">3 пара</span>
+                        </div>
+                        <div class="lesson-info">
+                            <span class="subject">Информатика</span>
+                            <span class="teacher">Жадан А.В.</span>
+                        </div>
+                        <div class="lesson-location">
+                            <span class="room">Ауд. 02</span>
+                            <span class="building">Корпус 1</span>
+                        </div>
+                    </div>
+                    <div class="lesson" onclick="showTeacher(4)">
+                        <div class="lesson-time">
+                            <span class="time">13:45 - 15:20</span>
+                            <span class="lesson-number">4 пара</span>
+                        </div>
+                        <div class="lesson-info">
+                            <span class="subject">Английский язык</span>
+                            <span class="teacher">Цылина Е.В.</span>
+                        </div>
+                        <div class="lesson-location">
+                            <span class="room">Ауд. 18</span>
+                            <span class="building">Корпус 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="teacher-info" id="teacherInfo">
+                <div class="teacher-card">
+                    <img src="" alt="Фото преподавателя" id="teacherPhoto">
+                    <h3 id="teacherName"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Выполнил студент 13 группы Артемьев Даниил Алексеевич</p>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html> 
